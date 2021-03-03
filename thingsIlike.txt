@@ -1,0 +1,14 @@
+I like sky
+I like white color
+<<<<<<< HEAD
+I like moon very much
+=======
+>>>>>>> Alex
+I like cats
+I like delicious food
+I don't like cartoons
+I like movies
+I like my little room
+I like blue color
+I like green color
+I like snow
