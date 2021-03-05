@@ -1,0 +1,6 @@
+At first, I was not sure what every command meant. So the practical was challenging at that time and I did not know how to deal with the bugs. 
+For example, I knew nothing about "nano" and I was confused with (3)pressing return to confirm your choice. Now I know it is just pressing the "Enter" button. 
+"revert" was also difficult. I forgot to type ":" before "x" so I always failed to escape. 
+After the practical, I knew more about "commit". After add a file in the directory, I need to "git add <filename>" first before committing. If I fail to "git push origin master", I can try "git push origin main" or  "git pull origin master". 
+What's more, I am proud that now I can relate knowledge about git with what I learned about file and directory in week 3.  I also get familiar with how to ask for help from the Internet.
+I have a small question about the practical. Sometimes after I typed "git log", I could not type next command. Only after I pressed control+Z could I stop "git log" process and continue my task. Why did this happen? What other methods can I use to stop "git log" process?
