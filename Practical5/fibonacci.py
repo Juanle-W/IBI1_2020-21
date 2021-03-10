@@ -7,4 +7,4 @@ for i in range (3,14):
         a=b
         b=c
         i=i+1
-print n3
+print c
