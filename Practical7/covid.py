@@ -42,6 +42,7 @@ plt.show()
 plt.plot(world_dates, world_new_cases, 'b+')
 plt.plot(world_dates, world_new_deaths, 'ro')
 plt.xticks(world_dates.iloc[0:len(world_dates):4],rotation=-90)
+plt.xlabel(world_dates)
 plt.show()
 L2=[]
 for i in range (0,7996):
