@@ -38,14 +38,14 @@ plt.boxplot(score,
              showfliers = True,
              notch = False
              )
-plt.xlabel(world dates)
-plt.ylabel(world new cases)
+plt.xlabel('world_dates')
+plt.ylabel('world_new_cases')
 plt.show()
 plt.plot(world_dates, world_new_cases, 'b+', label='world new cases')
 plt.plot(world_dates, world_new_deaths, 'ro', label='world new deaths')
 plt.xticks(world_dates.iloc[0:len(world_dates):4],rotation=-90)
-plt.xlabel(world_dates)
-plt.ylabel(human number)
+plt.xlabel('world_dates')
+plt.ylabel('human_number')
 plt.legend()
 plt.show()
 L2=[]
@@ -61,8 +61,8 @@ Spain_dates=covid_data.loc[L2,"date"]
 plt.plot(Spain_dates, Spain_new_cases, 'bo', label='Spain new cases')
 plt.plot(Spain_dates, Spain_total_cases, 'r+', label='Spain total cases')
 plt.xticks(Spain_dates.iloc[0:len(Spain_dates):4],rotation=-90)
-plt.xlabel(Spain dates)
-plt.ylabel(human number)
+plt.xlabel('Spain_dates')
+plt.ylabel('human_number')
 plt.legend()
 plt.show()
  
