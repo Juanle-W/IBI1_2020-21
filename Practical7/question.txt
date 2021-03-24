@@ -1,3 +1,8 @@
 Question: How have new cases and total cases developed over time in Spain?
-line number where the question is addressed in the covid.py file: 
+line number where the question is addressed in the covid.py file: from line 59 to line 78
 Result and discussion: 
+In Spain, before 2020-03-11, there were almost no COVID cases. The daily new cases were close to 0.
+After 2020-03-11, the total cases in Spain started increasing quickly. The curve of the total cases in Spain looks like exponential growth.
+The daily new cases also increased fast after 2020-03-11, but not so fast as the total cases. The daily new cases reached the peak on around 2020-03-28. After 2020-03-28, the number of daily new cases decreased slightly. But the number was still large.
+
+From the graph it is supposed that the total cases in Spain will keep increasing in the near future. The reason for the rapid increase after 2020-03-11 may be the entry of foreign people infected by COVID and the failure of the Spain government to take action timely to precent the spread of the disease. The number of the daily new cases went down slightly after 2020-03-28 may be because more residents have known how to protect themselves against the disease and stayed at home to avoid close contact with people.
