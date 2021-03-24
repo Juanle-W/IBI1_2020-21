@@ -48,8 +48,8 @@ plt.ylabel('world_new_cases')
 plt.show()
 
 #plot both new cases and new deaths for the entire world in one graph
-plt.plot(world_dates, world_new_cases, 'b+', label='world new cases')
-plt.plot(world_dates, world_new_deaths, 'ro', label='world new deaths')
+plt.plot(world_dates, world_new_cases, 'y-', label='world new cases')
+plt.plot(world_dates, world_new_deaths, 'g-', label='world new deaths')
 plt.xticks(world_dates.iloc[0:len(world_dates):4],rotation=-90)
 plt.xlabel('world_dates')
 plt.ylabel('human_number')
@@ -69,8 +69,8 @@ Spain_total_cases=covid_data.loc[L2,"total_cases"] #make an object to store tota
 Spain_dates=covid_data.loc[L2,"date"] #make an object to store dates of Spain
 
 #plot new cases and total cases of Spain in one graph
-plt.plot(Spain_dates, Spain_new_cases, 'bo', label='Spain new cases')
-plt.plot(Spain_dates, Spain_total_cases, 'r+', label='Spain total cases')
+plt.plot(Spain_dates, Spain_new_cases, 'r-', label='Spain new cases')
+plt.plot(Spain_dates, Spain_total_cases, 'y-', label='Spain total cases')
 plt.xticks(Spain_dates.iloc[0:len(Spain_dates):4],rotation=-90)
 plt.xlabel('Spain_dates')
 plt.ylabel('human_number')
