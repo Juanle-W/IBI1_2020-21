@@ -1,5 +1,7 @@
+#get help from http://errornoerror.com/question/12909453003679847514/
 protein = ''
-seq = 'ATGCGACTACGATCGAGGGCC'
+seq = 'ATGCGACTACGATCGAGGGCC' #import the DNA sequence
+#make a dictionary of which type of proteins corresponding with codons
 genetic_code = {
 'TTT':'F', 'TTC':'F', 'TTA':'L', 'TTG':'L',
 'TCT':'S', 'TCC':'S', 'TCA':'S', 'TCG':'S',
@@ -17,8 +19,9 @@ genetic_code = {
 'GCT':'A', 'GCC':'A', 'GCA':'A', 'GCG':'A',
 'GAT':'D', 'GAC':'D', 'GAA':'E', 'GAG':'E',
 'GGT':'G', 'GGC':'G', 'GGA':'G', 'GGG':'G'}
+#get the codons by reading 3 nitrogenous base groups at one time
 for i in range (0, len(seq), 3):
-	codon = seq[i:i+3]
-	protein = protein + genetic_code [codon]
+	codon = seq[i:i+3] #get a codon
+	protein = protein + genetic_code [codon] #translate the codon and after the loop we can get the entire protein sequence
 
 print(protein)
