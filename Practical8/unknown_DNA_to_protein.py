@@ -1,8 +1,11 @@
+#input and output two fa files
 f = open('/Users/user/IBI1_2020-21/Practical8/unknown_function.fa')
 fw = open('/Users/user/IBI1_2020-21/Practical8/unknown_protein.fa','w')
+#read the lines in the unknown_function.fa file
 line = f.readlines()
 name = []
 protein = []
+#similar way to translate dna sequence into protein sequence as DNA_to_protein.py
 genetic_code = {
 'TTT':'F', 'TTC':'F', 'TTA':'L', 'TTG':'L',
 'TCT':'S', 'TCC':'S', 'TCA':'S', 'TCG':'S',
@@ -20,18 +23,20 @@ genetic_code = {
 'GCT':'A', 'GCC':'A', 'GCA':'A', 'GCG':'A',
 'GAT':'D', 'GAC':'D', 'GAA':'E', 'GAG':'E',
 'GGT':'G', 'GGC':'G', 'GGA':'G', 'GGG':'G'}
+#get information of name and DNA sequence seperately as well as translating DNA sequence into protein sequence
 for i in range (len(line)):
 	if line[i].startswith('>'):
 		name.append(line[i].split(' ')[0])
 	else:
 		dnaseq = line[i].replace('\n', '')
 		proseq = ''
-		for j in range (0, len(dnaseq), 3):
+		for j in range (0, len(dnaseq), 3): #similar to the way in DNA_to_protein.py
 			codon = dnaseq[j:j+3]
 			proseq += genetic_code[codon]
 		protein.append(proseq)
 
 f.close()
+#write the output fa file
 for i in range (len(name)):
 	fw.write(name[i])
 	fw.write(' ')
