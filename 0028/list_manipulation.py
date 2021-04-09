@@ -10,6 +10,8 @@ exon_counts=np.array(exon_counts)
 average_exon_lengths=gene_lengths/exon_counts
 #turn array type into list type
 average_exon_lengths=list(average_exon_lengths)
+average=sorted(average_exon_lengths)
+print(average)
 #draw a boxplot
 n = 10
 score = average_exon_lengths
@@ -23,4 +25,5 @@ plt.boxplot(score,
 	showfliers = False, #not diaplay outliers
 	notch = False #The boxplot is not presented in the form of notches
 	)
+plt.title('the distribution of average exon length')
 plt.show() #show the boxplot
