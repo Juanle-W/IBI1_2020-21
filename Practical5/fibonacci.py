@@ -6,9 +6,8 @@ b=1
 #Also I should replace b value with the current c value. 
 #Finally I get the 13th value and show it as c value.
 for i in range (3,14):
-        c=a+b
-        a=b
-        b=c
+	c=a+b
+	a=b
+	b=c
 	print(c)
-        i=i+1
-
+	i=i+1
