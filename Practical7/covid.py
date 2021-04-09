@@ -45,6 +45,7 @@ plt.boxplot(score,
 #label x and y axises
 plt.xlabel('world_dates')
 plt.ylabel('world_new_cases')
+plt.title('worldwide situation')
 plt.show()
 
 #plot both new cases and new deaths for the entire world in one graph
@@ -54,6 +55,7 @@ plt.xticks(world_dates.iloc[0:len(world_dates):4],rotation=-90)
 plt.xlabel('world_dates')
 plt.ylabel('human_number')
 plt.legend()
+plt.title('new cases and new deaths for the entire world')
 plt.show()
 
 #try to answer the question by using Boolean
@@ -75,5 +77,6 @@ plt.xticks(Spain_dates.iloc[0:len(Spain_dates):4],rotation=-90)
 plt.xlabel('Spain_dates')
 plt.ylabel('human_number')
 plt.legend()
+plt.title('new cases and total cases of Spain')
 plt.show()
  
