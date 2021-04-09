@@ -9,5 +9,6 @@ for i in range (3,14):
         c=a+b
         a=b
         b=c
+	print(c)
         i=i+1
-print c
+
