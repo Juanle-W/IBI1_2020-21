@@ -1,7 +1,7 @@
 def student(name, code, poster, exam):
-	total_mark=code*0.4+poster*0.3+exam*0.3
-	print('name: ',name, end='; ')
-	print('total mark: ',str(total_mark))
-	return
+	total_mark=code*0.4+poster*0.3+exam*0.3#calculate the total mark
+	return name + ' ' + str(total_mark)
 
-student(name='Mike',code=89,poster=78,exam=79)
+#give an instance
+a=student(name='Mike',code=89,poster=78,exam=79)
+print(a)
