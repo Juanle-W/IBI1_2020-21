@@ -12,4 +12,5 @@ def reverse_complement (seq):
 	result=''.join(reverse_complement_bases)#change the list type to the string type
 	return print(result)
 
+#give an example
 reverse_complement('ATCGGGTCag')
