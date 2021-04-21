@@ -1,0 +1,23 @@
+by using python3 to open the Alignment.py file, I got the following findings:
+
+1.1 The sequence of SOD2_human is 
+MLSRAVCGTSRQLAPVLAYLGSRQKHSLPDLPYDYGALEPHINAQIMQLHHSKHHAAYVNNLNVTEEKYQEALAKGDVTAQIALQPALKFNGGGHINHSIFWTNLSPNGGGEPKGELLEAIKRDFGSFDKFKEKLTAASVGVQGSGWGWLGFNKERGHLQIAACPNQDPLQGTTGLIPLLGIDVWEHAYYLQYKNVRPDYLKAIWNVINWENVTERYMACKK
+1.2 The sequence of SOD2_mouse is
+MLCRAACSTGRRLGPVAGAAGSRHKHSLPDLPYDYGALEPHINAQIMQLHHSKHHAAYVNNLNATEEKYHEALAKGDVTTQVALQPALKFNGGGHINHTIFWTNLSPKGGGEPKGELLEAIKRDFGSFEKFKEKLTAVSVGVQGSGWGWLGFNKEQGRLQIAACSNQDPLQGTTGLIPLLGIDVWEHAYYLQYKNVRPDYLKAIWNVINWENVTERYTACKK 
+1.3 The sequence of RandomSeq is
+WNGFSEWWTHEVDYNQKLTIENNQRPKIHEHEQWGLRQSPPPPKLCCPTCQMCERMRHQNRFAPLMEVGCRCMCWFHDWWVISVGTWLHTVIMYMMWPKRFHHNECPKACFRTTYTRKNHHALYWMLFEMCCYDQDVVWSKTHIFTTVRDIEVYVEQVFFIWGPLCHVAIACYEPVKTIRRRIPMYLCRHCIRGDNSYLLACCSIIYYFYHHMSYYGVLDIL
+
+2. By using BLOSUM62 matrix:
+the score between human and mouse is 1091
+the score between human and random sequence is -250
+the score between mouse and random sequence is -250
+
+3. the percentage of identical amino acids for comparsion between human and mouse is 89.63963963963964%
+the percentage of identical amino acids for comparsion between human and random sequence is 5.405405405405405%
+the percentage of identical amino acids for comparsion between human and random sequence is 5.8558558558558556%
+
+The alignment scores show the biological relevance of different proteins. The higher the score is, the more closely the two proteins are relevant.
+Since the score between human and mouse is high (bigger than 1000) while both the score between human and random sequence and the score between mouse and random sequence are smaller than 0, I think SOD2_human and SOD2_mouse are closely relevant.
+By calculating the percentage of identical amino acids for each comparison, I find the percentage of SOD2_human and SOD2_mouse is close to 90% while both SOD2_human and SOD2_mice has low percentage (5%) of identical amino acids with a random sequence. This further prove that SOD2_human and SOD2_mouse are closely relevant.
+The close biological relevance between these two proteins may be because they are both SOD2 protein but develop in different species of animals. However, according to the theory of origin of species, all species came from one species.
+
