@@ -1,5 +1,5 @@
 I like sky
-I like white color
+I like black color
 <<<<<<< HEAD
 I like moon very much
 =======
