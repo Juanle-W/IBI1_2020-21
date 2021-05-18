@@ -39,7 +39,7 @@ for n in range (terms.length):
 for n in range (terms.length):
 	if 'carbohydrate' in terms[n].getElementsByTagName('defstr')[0].childNodes[0].data:
 		carbohydrate.append(terms[n].getElementsByTagName('id')[0].childNodes[0].data)
-	elif 'carbohydrate' in terms[n].getElementsByTagName('defstr')[0].childNodes[0].data:
+	elif 'Carbohydrate' in terms[n].getElementsByTagName('defstr')[0].childNodes[0].data:
 		carbohydrate.append(terms[n].getElementsByTagName('id')[0].childNodes[0].data)
 
 #run a recursion to find the childnodes of terms about the molecules we need
